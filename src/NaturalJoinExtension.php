@@ -57,8 +57,6 @@ class NaturalJoinExtension extends \Twig_Extension {
 				($oxford ? $seperator : '') .
 				$final_seperator .
 				$last;
-			}
-
 
 		}
 
