@@ -2,17 +2,38 @@
 
 Twig filter that joins an array using a different separator for the last element (e.g. "John, Mary, Bob and Jim").
 
+[![Total Downloads](https://poser.pugx.org/cviebrock/twig-natural-join/downloads.png)](https://packagist.org/packages/cviebrock/twig-natural-join)
+[![Latest Stable Version](https://poser.pugx.org/cviebrock/twig-natural-join/v/stable.png)](https://packagist.org/packages/cviebrock/twig-natural-join)
+
 
 
 ## Installation
 
-The filter is registered at Packagist as [cviebrock/twig-natural-join](https://packagist.org/packages/cviebrock/twig-natural-join) and can be installed using [composer](http://getcomposer.org/).
+The filter is registered at Packagist as [cviebrock/twig-natural-join](https://packagist.org/packages/cviebrock/twig-natural-join) and can be installed using [composer](http://getcomposer.org/):
+
+```
+    "require": {
+        ...
+        "cviebrock/twig-natural-join": "0.9.*",
+    }
+```
 
 Or just download the zip file and copy the file into your _src_ folder.
+
+Enable the extension:
 
 ```php
 $twig = new Twig_Environment($loader, $options);
 $twig->addExtension(new Cviebrock\Twig\NaturalJoinExtension());
+```
+
+If you are using Laravel and [rcrowe/twigbridge](https://github.com/rcrowe/TwigBridge), then enable the extension by adding an entry to the `enabled` array in `app/config/packages/rcrowe/twigbridge/extensions.php`:
+
+```php
+    'enabled' => [
+            ...
+            'Cviebrock\Twig\NaturalJoinExtension',
+    ],
 ```
 
 
@@ -25,7 +46,7 @@ Pass the normal seperator and final seperator to the filter:
 {{ names|naturaljoin(", ", " and ") }}          // John, Bill, Bob and Mary
 ```
 
-Optionally pass the "Oxford" argument to add a normal seperator before the final seperator:
+Optionally pass `true` as a third argument to turn on "Oxford" mode, which will add a normal seperator before the final seperator:
 
 ```twig
 {{ names|naturaljoin(", ", " and ", true) }}    // John, Bill, Bob, and Mary
