@@ -1,0 +1,26 @@
+{
+    "name": "cviebrock/twig-natural-join",
+    "description": "Twig filter that joins an array using a different separator for the last element",
+    "keywords": ["templating", "twig", "filter", "join"],
+    "license": "MIT",
+    "homepage": "http://github.com/cviebrock/twig-natural-join",
+    "authors": [
+        {
+            "name": "Colin Viebrock",
+            "email": "colin@viebrock.ca"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/cviebrock/twig-natural-join/issues",
+        "source": "https://github.com/cviebrock/twig-natural-join"
+    },
+    "require": {
+        "twig/twig": "1.*",
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cviebrock\\Twig": "src/"
+        }
+    }
+}
