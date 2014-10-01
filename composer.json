@@ -1,7 +1,12 @@
 {
     "name": "cviebrock/twig-natural-join",
     "description": "Twig filter that joins an array using a different separator for the last element",
-    "keywords": ["templating", "twig", "filter", "join"],
+    "keywords": [
+        "templating",
+        "twig",
+        "filter",
+        "join"
+    ],
     "license": "MIT",
     "homepage": "http://github.com/cviebrock/twig-natural-join",
     "authors": [
