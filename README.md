@@ -12,10 +12,10 @@ Twig filter that joins an array using a different separator for the last element
 The filter is registered at Packagist as [cviebrock/twig-natural-join](https://packagist.org/packages/cviebrock/twig-natural-join) and can be installed using [composer](http://getcomposer.org/):
 
 ```
-    "require": {
-        ...
-        "cviebrock/twig-natural-join": "0.9.*",
-    }
+"require": {
+	...
+	"cviebrock/twig-natural-join": "0.9.*",
+}
 ```
 
 Or just download the zip file and copy the file into your _src_ folder.
@@ -30,10 +30,10 @@ $twig->addExtension(new Cviebrock\Twig\NaturalJoinExtension());
 If you are using Laravel and [rcrowe/twigbridge](https://github.com/rcrowe/TwigBridge), then enable the extension by adding an entry to the `enabled` array in `app/config/packages/rcrowe/twigbridge/extensions.php`:
 
 ```php
-    'enabled' => [
-            ...
-            'Cviebrock\Twig\NaturalJoinExtension',
-    ],
+'enabled' => [
+	...
+	'Cviebrock\Twig\NaturalJoinExtension',
+],
 ```
 
 
