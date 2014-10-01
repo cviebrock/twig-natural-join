@@ -50,6 +50,7 @@ Optionally pass `true` as a third argument to turn on "Oxford" mode, which will 
 
 ```twig
 {{ names|naturaljoin(", ", " and ", true) }}    // John, Bill, Bob, and Mary
+                                                                  ^
 ```
 
 
